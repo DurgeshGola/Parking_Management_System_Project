@@ -18,7 +18,6 @@ services:
   - type: web
     name: park-ease-web
     runtime: static
-    plan: free
     rootDir: Park-Ease/frontend
     buildCommand: npm ci && npm run build
     staticPublishPath: build
