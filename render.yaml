@@ -15,8 +15,9 @@ services:
       - key: JWT_SECRET
         generateValue: true
 
-  - type: static
+  - type: web
     name: park-ease-web
+    runtime: static
     plan: free
     rootDir: Park-Ease/frontend
     buildCommand: npm ci && npm run build
